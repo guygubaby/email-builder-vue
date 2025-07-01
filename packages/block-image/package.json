@@ -16,13 +16,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/flyhub-dev/email-builder-vue.git"
+    "url": "git+https://github.com/guygubaby/email-builder-vue.git"
   },
   "bugs": {
-    "url": "https://github.com/flyhub-dev/email-builder-vue/issues"
+    "url": "https://github.com/guygubaby/email-builder-vue/issues"
   },
   "license": "MIT",
-  "homepage": "https://github.com/flyhub-dev/email-builder-vue#readme",
+  "homepage": "https://github.com/guygubaby/email-builder-vue#readme",
   "publishConfig": {
     "access": "public"
   },

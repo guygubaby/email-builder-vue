@@ -3,7 +3,7 @@
   <p align="center">
     <a href="https://usewaypoint.github.io/email-builder-js/#sample/reservation-reminder">Demo / Playground (original)</a>&emsp;&middot;&emsp;
     <a href="https://www.emailbuilderjs.com">EmailBuilderJS.com (original)</a>&emsp;&middot;&emsp;
-    <a href="https://github.com/flyhub-dev/email-builder-vue">GitHub</a>&emsp;&middot;&emsp;
+    <a href="https://github.com/guygubaby/email-builder-vue">GitHub</a>&emsp;&middot;&emsp;
   </p>
 </div>
 
@@ -57,16 +57,16 @@ Note: This list of blocks is based on the original EmailBuilder.js. This port is
 
 Each block is its own npm package that can be included in the builder. These are the ones that are built-in:
 
-- [Avatar](https://github.com/flyhub-dev/email-builder-vue/tree/main/packages/block-avatar)
-- [Button](https://github.com/flyhub-dev/email-builder-vue/tree/main/packages/block-button)
-- [Columns Container](https://github.com/flyhub-dev/email-builder-vue/tree/main/packages/block-columns-container)
-- [Container](https://github.com/flyhub-dev/email-builder-vue/tree/main/packages/block-container)
-- [Divider](https://github.com/flyhub-dev/email-builder-vue/tree/main/packages/block-divider)
-- [Heading](https://github.com/flyhub-dev/email-builder-vue/tree/main/packages/block-heading)
-- [HTML](https://github.com/flyhub-dev/email-builder-vue/tree/main/packages/block-html)
-- [Image](https://github.com/flyhub-dev/email-builder-vue/tree/main/packages/block-image)
-- [Spacer](https://github.com/flyhub-dev/email-builder-vue/tree/main/packages/block-spacer)
-- [Text](https://github.com/flyhub-dev/email-builder-vue/tree/main/packages/block-text)
+- [Avatar](https://github.com/guygubaby/email-builder-vue/tree/main/packages/block-avatar)
+- [Button](https://github.com/guygubaby/email-builder-vue/tree/main/packages/block-button)
+- [Columns Container](https://github.com/guygubaby/email-builder-vue/tree/main/packages/block-columns-container)
+- [Container](https://github.com/guygubaby/email-builder-vue/tree/main/packages/block-container)
+- [Divider](https://github.com/guygubaby/email-builder-vue/tree/main/packages/block-divider)
+- [Heading](https://github.com/guygubaby/email-builder-vue/tree/main/packages/block-heading)
+- [HTML](https://github.com/guygubaby/email-builder-vue/tree/main/packages/block-html)
+- [Image](https://github.com/guygubaby/email-builder-vue/tree/main/packages/block-image)
+- [Spacer](https://github.com/guygubaby/email-builder-vue/tree/main/packages/block-spacer)
+- [Text](https://github.com/guygubaby/email-builder-vue/tree/main/packages/block-text)
 
 <br>
 
@@ -213,7 +213,7 @@ await axios({
 
 ## Self hosting the Editor
 
-Fork this repository and use [packages/editor-sample](https://github.com/flyhub-dev/email-builder-vue/tree/main/packages/editor-sample) as an example for self-hosting.
+Fork this repository and use [packages/editor-sample](https://github.com/guygubaby/email-builder-vue/tree/main/packages/editor-sample) as an example for self-hosting.
 
 Quick start:
 

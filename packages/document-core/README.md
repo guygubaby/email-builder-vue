@@ -1,6 +1,6 @@
 # @infocare/document-core
 
-This is the core library used to build the email messages with (@infocare/email-builder)[https://github.com/flyhub-dev/email-builder-vue]. It is non-opinionated and light on dependencies so that it can be used to compose complex documents.
+This is the core library used to build the email messages with (@infocare/email-builder)[https://github.com/guygubaby/email-builder-vue]. It is non-opinionated and light on dependencies so that it can be used to compose complex documents.
 
 ## Installation
 
