@@ -31,7 +31,7 @@ export default defineConfig({
 			output: {
 				banner: `
 /**
- *  Copyright ${new Date(Date.now()).getFullYear()} AntonyDev
+ *  Copyright ${new Date(Date.now()).getFullYear()} Bryce
  *  @license MIT
 **/
 `,
