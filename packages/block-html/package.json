@@ -31,7 +31,7 @@
     "zod": "^1 || ^2 || ^3"
   },
   "dependencies": {
-    "@infocare/email-core": "^0.0.1"
+    "@infocare/email-core": "workspace:*"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.3",

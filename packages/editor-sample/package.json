@@ -35,7 +35,7 @@
     "@vitejs/plugin-vue": "^5.2.3",
     "@vitejs/plugin-vue-jsx": "^4.1.2",
     "pinia": "^3.0.2",
-    "@infocare/email-builder": "^0.0.1",
+    "@infocare/email-builder": "workspace:*",
     "@nuxt/ui": "^3.1.0",
     "highlight.js": "^11.11.1",
     "prettier": "^3.5.3"

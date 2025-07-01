@@ -63,18 +63,18 @@
     "zod": "^1 || ^2 || ^3"
   },
   "dependencies": {
-    "@infocare/email-block-avatar": "^0.0.1",
-    "@infocare/email-block-button": "^0.0.1",
-    "@infocare/email-block-columns-container": "^0.0.1",
-    "@infocare/email-block-container": "^0.0.1",
-    "@infocare/email-block-divider": "^0.0.1",
-    "@infocare/email-block-heading": "^0.0.1",
-    "@infocare/email-block-html": "^0.0.1",
-    "@infocare/email-block-image": "^0.0.1",
-    "@infocare/email-block-spacer": "^0.0.1",
-    "@infocare/email-block-text": "^0.0.1",
-    "@infocare/email-core": "^0.0.1",
-    "@infocare/email-document-core": "^0.0.1"
+    "@infocare/email-block-avatar": "workspace:*",
+    "@infocare/email-block-button": "workspace:*",
+    "@infocare/email-block-columns-container": "workspace:*",
+    "@infocare/email-block-container": "workspace:*",
+    "@infocare/email-block-divider": "workspace:*",
+    "@infocare/email-block-heading": "workspace:*",
+    "@infocare/email-block-html": "workspace:*",
+    "@infocare/email-block-image": "workspace:*",
+    "@infocare/email-block-spacer": "workspace:*",
+    "@infocare/email-block-text": "workspace:*",
+    "@infocare/email-core": "workspace:*",
+    "@infocare/email-document-core": "workspace:*"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.3",
