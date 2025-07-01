@@ -1,4 +1,4 @@
-import type { TEditorConfiguration } from '../../../documents/editor/core';
+import type { TEditorConfiguration } from '../../documents/editor/core';
 
 const EMPTY_EMAIL_MESSAGE: TEditorConfiguration = {
   root: {

@@ -3,7 +3,7 @@
     :style="{
       backgroundColor: backdropColor ?? '#F5F5F5',
       color: textColor ?? '#262626',
-      fontFamily: getFontFamily(fontFamily),
+      fontFamily: getFontFamily(fontFamily as any),
       fontSize: '16px',
       fontWeight: '400',
       letterSpacing: '0.15008px',
@@ -52,7 +52,7 @@
 <script setup lang="ts">
 import { getFontFamily } from '@infocare/email-core';
 import { currentBlockIdSymbol } from '../../editor/EditorBlock.vue';
-import type { TEditorBlock } from '@infocare/email-core';
+import type { TEditorBlock } from '../../editor/core';
 import EditorChildrenIds from '../helpers/EditorChildrenIds.vue';
 import { inject } from 'vue';
 
