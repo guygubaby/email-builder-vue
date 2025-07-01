@@ -1,6 +1,6 @@
 {
   "name": "@infocare/email-builder",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "build": "npm run build:lib && npm run build:types",
     "build:lib": "vite build",
