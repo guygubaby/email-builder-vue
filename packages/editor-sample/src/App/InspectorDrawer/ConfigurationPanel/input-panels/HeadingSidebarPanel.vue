@@ -26,8 +26,8 @@
 import BaseSidebarPanel from './helpers/BaseSidebarPanel.vue';
 import MultiStylePropertyPanel from './helpers/style-inputs/MultiStylePropertyPanel.vue';
 import RadioGroupInput from './helpers/inputs/RadioGroupInput.vue';
-import type { HeadingProps} from '@flyhub/email-block-heading';
-import { HeadingPropsSchema, HeadingPropsDefaults } from '@flyhub/email-block-heading';
+import type { HeadingProps} from '@infocare/email-block-heading';
+import { HeadingPropsSchema, HeadingPropsDefaults } from '@infocare/email-block-heading';
 import { ref } from 'vue';
 
 type HeadingSidebarPanelProps = {

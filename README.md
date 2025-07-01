@@ -89,13 +89,13 @@ The email builder can output to a clean JSON or raw HTML. You can see this from 
 Install the package in your project:
 
 ```bash
-npm install --save @flyhub/email-builder
+npm install --save @infocare/email-builder
 ```
 
 Given an EmailBuilder.js (Vue.js Port) configuration (the JSON output of the builder):
 
 ```javascript
-import { TReaderDocument } from '@flyhub/email-builder';
+import { TReaderDocument } from '@infocare/email-builder';
 
 const CONFIGURATION: TReaderDocument = {
   root: {
@@ -131,7 +131,7 @@ const CONFIGURATION: TReaderDocument = {
 You can render the EmailBuilder.js (Vue.js Port) configuration to an HTML email string:
 
 ```javascript
-import { renderToStaticMarkup } from '@flyhub/email-builder';
+import { renderToStaticMarkup } from '@infocare/email-builder';
 
 const string = renderToStaticMarkup(CONFIGURATION, { rootBlockId: 'root' });
 ```
@@ -144,7 +144,7 @@ Or you can render the EmailBuilder.js (Vue.js Port) configuration by using the `
 </template>
 
 <script setup>
-import { Reader } from '@flyhub/email-builder';
+import { Reader } from '@infocare/email-builder';
 </script>
 ```
 
@@ -157,7 +157,7 @@ In most cases, you'll want to take the EmailBuilder.js (Vue.js Port) configurati
 ### Sending through nodemailer
 
 ```javascript
-import { renderToStaticMarkup } from '@flyhub/email-builder';
+import { renderToStaticMarkup } from '@infocare/email-builder';
 import nodemailer from "nodemailer";
 
 // Replace this with your transport configuration
@@ -184,7 +184,7 @@ We'll use [Waypoint](https://www.usewaypoint.com) for this example, however, you
 ```javascript
 import axios from 'axios';
 
-import { renderToStaticMarkup } from '@flyhub/email-builder';
+import { renderToStaticMarkup } from '@infocare/email-builder';
 
 // TODO: Replace this with the JSON for your Reader document
 const CONFIGURATION: TReaderDocument = {/* your config here */}

@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-import BaseColumnsContainer from '@flyhub/email-block-columns-container';
+import BaseColumnsContainer from '@infocare/email-block-columns-container';
 import ReaderEditorChildrenIds from '../../helpers/ReaderEditorChildrenIds.vue';
 import type { ColumnsContainerProps } from './ColumnsContainerPropsSchema';
 import { computed } from 'vue';

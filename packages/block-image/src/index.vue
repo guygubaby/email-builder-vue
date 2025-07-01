@@ -8,7 +8,7 @@
 </template>
 
 <script lang="ts">
-import { PADDING_SCHEMA, getPadding } from '@flyhub/email-core';
+import { PADDING_SCHEMA, getPadding } from '@infocare/email-core';
 import { z } from 'zod';
 import { computed } from 'vue';
 

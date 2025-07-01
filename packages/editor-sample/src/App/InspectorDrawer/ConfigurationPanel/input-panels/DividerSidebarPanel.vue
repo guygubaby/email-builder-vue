@@ -24,8 +24,8 @@
 </template>
 
 <script setup lang="ts">
-import type { DividerProps } from '@flyhub/email-block-divider';
-import { DividerPropsDefaults, DividerPropsSchema  } from '@flyhub/email-block-divider';
+import type { DividerProps } from '@infocare/email-block-divider';
+import { DividerPropsDefaults, DividerPropsSchema  } from '@infocare/email-block-divider';
 import ColorInput from './helpers/inputs/ColorInput/ColorInput.vue';
 import SliderInput from './helpers/inputs/SliderInput.vue';
 import BaseSidebarPanel from './helpers/BaseSidebarPanel.vue';

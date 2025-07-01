@@ -27,8 +27,8 @@
 import BaseSidebarPanel from './helpers/BaseSidebarPanel.vue';
 import MultiStylePropertyPanel from './helpers/style-inputs/MultiStylePropertyPanel.vue';
 import BooleanInput from './helpers/inputs/BooleanInput.vue';
-import type { TextProps } from '@flyhub/email-block-text';
-import { TextPropsSchema } from '@flyhub/email-block-text';
+import type { TextProps } from '@infocare/email-block-text';
+import { TextPropsSchema } from '@infocare/email-block-text';
 import { ref } from 'vue';
 
 type TextSidebarPanelProps = {

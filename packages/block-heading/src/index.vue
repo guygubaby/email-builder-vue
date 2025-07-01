@@ -6,8 +6,8 @@
 
 <script lang="ts">
 import { z } from 'zod';
-import type { FONT_FAMILY_NAMES } from '@flyhub/email-core';
-import { COLOR_SCHEMA, FONT_FAMILY_SCHEMA, PADDING_SCHEMA, getFontFamily, getFontSize, getPadding } from '@flyhub/email-core';
+import type { FONT_FAMILY_NAMES } from '@infocare/email-core';
+import { COLOR_SCHEMA, FONT_FAMILY_SCHEMA, PADDING_SCHEMA, getFontFamily, getFontSize, getPadding } from '@infocare/email-core';
 import { computed } from 'vue';
 
 export const HeadingPropsSchema = z.object({

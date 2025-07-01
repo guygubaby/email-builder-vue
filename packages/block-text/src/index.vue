@@ -5,7 +5,7 @@
 
 <script lang="ts">
 import EmailMarkdown from './EmailMarkdown.vue';
-import { COLOR_SCHEMA, FONT_FAMILY_NAMES, FONT_FAMILY_SCHEMA, PADDING_SCHEMA, getFontFamily, getPadding } from '@flyhub/email-core';
+import { COLOR_SCHEMA, FONT_FAMILY_NAMES, FONT_FAMILY_SCHEMA, PADDING_SCHEMA, getFontFamily, getPadding } from '@infocare/email-core';
 import { z } from 'zod';
 import { computed } from 'vue';
 

@@ -69,8 +69,8 @@ import BaseSidebarPanel from './helpers/BaseSidebarPanel.vue';
 import MultiStylePropertyPanel from './helpers/style-inputs/MultiStylePropertyPanel.vue';
 import RadioGroupInput from './helpers/inputs/RadioGroupInput.vue';
 import TextDimensionInput from './helpers/inputs/TextDimensionInput.vue';
-import type { ImageProps } from '@flyhub/email-block-image';
-import { ImagePropsSchema } from '@flyhub/email-block-image';
+import type { ImageProps } from '@infocare/email-block-image';
+import { ImagePropsSchema } from '@infocare/email-block-image';
 import { ref } from 'vue';
 
 type ImageSidebarPanelProps = {

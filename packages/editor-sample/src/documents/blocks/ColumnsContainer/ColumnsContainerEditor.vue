@@ -16,7 +16,7 @@
 </template>
 
 <script setup lang="ts">
-import BaseColumnsContainer from '@flyhub/email-block-columns-container';
+import BaseColumnsContainer from '@infocare/email-block-columns-container';
 import ColumnsContainerPropsSchema from './ColumnsContainerPropsSchema';
 import type { ColumnsContainerProps } from './ColumnsContainerPropsSchema';
 import { currentBlockIdSymbol } from '../../editor/EditorBlock.vue';

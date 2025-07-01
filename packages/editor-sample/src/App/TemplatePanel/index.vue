@@ -61,7 +61,7 @@ import HtmlPanel from './HtmlPanel.vue'
 import JsonPanel from './JsonPanel.vue'
 import ImportJson from './ImportJson/index.vue'
 import DownloadJson from './DownloadJson/index.vue'
-import { Reader } from '@flyhub/email-builder'
+import { Reader } from '@infocare/email-builder'
 import { useInspectorDrawer } from '../../documents/editor/editor.store'
 // FIXME: implement
 // import ShareButton from './ShareButton.vue'

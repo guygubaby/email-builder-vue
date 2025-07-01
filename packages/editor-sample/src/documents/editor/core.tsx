@@ -1,15 +1,15 @@
 import { z } from 'zod';
 
-import Heading, { HeadingPropsSchema } from '@flyhub/email-block-heading';
-import Text, { TextPropsSchema } from '@flyhub/email-block-text';
-import Button, { ButtonPropsSchema } from '@flyhub/email-block-button';
-import Image, { ImagePropsSchema } from '@flyhub/email-block-image';
-import Avatar, { AvatarPropsSchema } from '@flyhub/email-block-avatar';
-import Divider, { DividerPropsSchema } from '@flyhub/email-block-divider';
-import Spacer, { SpacerPropsSchema } from '@flyhub/email-block-spacer';
-import Html, { HtmlPropsSchema } from '@flyhub/email-block-html';
+import Heading, { HeadingPropsSchema } from '@infocare/email-block-heading';
+import Text, { TextPropsSchema } from '@infocare/email-block-text';
+import Button, { ButtonPropsSchema } from '@infocare/email-block-button';
+import Image, { ImagePropsSchema } from '@infocare/email-block-image';
+import Avatar, { AvatarPropsSchema } from '@infocare/email-block-avatar';
+import Divider, { DividerPropsSchema } from '@infocare/email-block-divider';
+import Spacer, { SpacerPropsSchema } from '@infocare/email-block-spacer';
+import Html, { HtmlPropsSchema } from '@infocare/email-block-html';
 
-import { buildBlockConfigurationDictionary, buildBlockConfigurationSchema } from '@flyhub/email-document-core/builders';
+import { buildBlockConfigurationDictionary, buildBlockConfigurationSchema } from '@infocare/email-document-core/builders';
 
 import ColumnsContainerEditor from '../blocks/ColumnsContainer/ColumnsContainerEditor.vue'
 import ColumnsContainerPropsSchema from '../blocks/ColumnsContainer/ColumnsContainerPropsSchema'

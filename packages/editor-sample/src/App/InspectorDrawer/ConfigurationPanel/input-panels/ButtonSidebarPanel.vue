@@ -47,8 +47,8 @@ import BaseSidebarPanel from './helpers/BaseSidebarPanel.vue';
 import MultiStylePropertyPanel from './helpers/style-inputs/MultiStylePropertyPanel.vue';
 import ColorInput from './helpers/inputs/ColorInput/ColorInput.vue';
 import RadioGroupInput from './helpers/inputs/RadioGroupInput.vue';
-import type { ButtonProps } from '@flyhub/email-block-button';
-import { ButtonPropsSchema, ButtonPropsDefaults } from '@flyhub/email-block-button';
+import type { ButtonProps } from '@infocare/email-block-button';
+import { ButtonPropsSchema, ButtonPropsDefaults } from '@infocare/email-block-button';
 import { computed, ref } from 'vue';
 
 type ButtonSidebarPanelProps = {

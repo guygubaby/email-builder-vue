@@ -1,6 +1,6 @@
 {
-  "name": "@flyhub/email-block-button",
-  "version": "0.0.4",
+  "name": "@infocare/email-block-button",
+  "version": "0.0.1",
   "scripts": {
     "build": "npm run build:lib && npm run build:types",
     "build:lib": "vite build",
@@ -30,7 +30,7 @@
     "zod": "^1 || ^2 || ^3"
   },
   "dependencies": {
-    "@flyhub/email-core": "^0.0.1"
+    "@infocare/email-core": "^0.0.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.3",

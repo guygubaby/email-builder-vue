@@ -26,7 +26,7 @@
 
 <script lang="ts">
 import TableCell from './TableCell.vue';
-import { COLOR_SCHEMA, PADDING_SCHEMA, getPadding } from '@flyhub/email-core';
+import { COLOR_SCHEMA, PADDING_SCHEMA, getPadding } from '@infocare/email-core';
 import { z } from 'zod';
 import { computed } from 'vue';
 

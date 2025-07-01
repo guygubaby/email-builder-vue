@@ -1,6 +1,6 @@
 {
-  "name": "@flyhub/email-block-text",
-  "version": "0.0.3",
+  "name": "@infocare/email-block-text",
+  "version": "0.0.1",
   "scripts": {
     "build": "npm run build:lib && npm run build:types",
     "build:lib": "vite build",
@@ -33,7 +33,7 @@
   "dependencies": {
     "insane": "^2.6.2",
     "marked": "^15.0.8",
-    "@flyhub/email-core": "^0.0.1"
+    "@infocare/email-core": "^0.0.1"
   },
   "devDependencies": {
     "@types/insane": "^1.0.0",

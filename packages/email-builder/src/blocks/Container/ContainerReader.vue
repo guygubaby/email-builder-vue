@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-import BaseContainer from '@flyhub/email-block-container';
+import BaseContainer from '@infocare/email-block-container';
 import ReaderBlock from '../../Reader/ReaderBlock.vue';
 import { ContainerProps } from './ContainerPropsSchema';
 

@@ -6,14 +6,14 @@
 import type { TReaderBlockProps } from '..';
 import { computed } from 'vue';
 
-import Avatar, { AvatarPropsSchema } from '@flyhub/email-block-avatar';
-import Button, { ButtonPropsSchema } from '@flyhub/email-block-button';
-import Divider, { DividerPropsSchema } from '@flyhub/email-block-divider';
-import Heading, { HeadingPropsSchema } from '@flyhub/email-block-heading';
-import Html, { HtmlPropsSchema } from '@flyhub/email-block-html';
-import Image, { ImagePropsSchema } from '@flyhub/email-block-image';
-import Spacer, { SpacerPropsSchema } from '@flyhub/email-block-spacer';
-import Text, { TextPropsSchema } from '@flyhub/email-block-text';
+import Avatar, { AvatarPropsSchema } from '@infocare/email-block-avatar';
+import Button, { ButtonPropsSchema } from '@infocare/email-block-button';
+import Divider, { DividerPropsSchema } from '@infocare/email-block-divider';
+import Heading, { HeadingPropsSchema } from '@infocare/email-block-heading';
+import Html, { HtmlPropsSchema } from '@infocare/email-block-html';
+import Image, { ImagePropsSchema } from '@infocare/email-block-image';
+import Spacer, { SpacerPropsSchema } from '@infocare/email-block-spacer';
+import Text, { TextPropsSchema } from '@infocare/email-block-text';
 
 import EmailLayoutReader, { EmailLayoutPropsSchema } from '../blocks/EmailLayout';
 import ColumnsContainerReader , { ColumnsContainerPropsSchema } from '../blocks/ColumnsContainer';

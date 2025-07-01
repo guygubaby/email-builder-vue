@@ -1,4 +1,4 @@
-import { COLOR_SCHEMA, FONT_FAMILY_NAMES, FONT_FAMILY_SCHEMA } from '@flyhub/email-core';
+import { COLOR_SCHEMA, FONT_FAMILY_NAMES, FONT_FAMILY_SCHEMA } from '@infocare/email-core';
 import { z } from 'zod';
 
 export const EmailLayoutPropsSchema = z.object({

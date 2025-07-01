@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "@types/node": "^22"
+  },
+  "scripts": {
+    "release": "pnpm -r --filter=packages/* run build && pnpm -r --filter=packages/* publish --access public"
   }
 }

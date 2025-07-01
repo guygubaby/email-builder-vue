@@ -1,13 +1,13 @@
-# @flyhub/document-core
+# @infocare/document-core
 
-This is the core library used to build the email messages with (@flyhub/email-builder)[https://github.com/flyhub-dev/email-builder-vue]. It is non-opinionated and light on dependencies so that it can be used to compose complex documents.
+This is the core library used to build the email messages with (@infocare/email-builder)[https://github.com/flyhub-dev/email-builder-vue]. It is non-opinionated and light on dependencies so that it can be used to compose complex documents.
 
 ## Installation
 
 **Installation with npm**
 
 ```bash
-npm install --save @flyhub/document-core
+npm install --save @infocare/document-core
 ```
 
 ## Usage

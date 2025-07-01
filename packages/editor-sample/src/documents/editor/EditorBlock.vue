@@ -7,7 +7,7 @@
 
 <script lang="ts">
 import { EDITOR_DICTIONARY } from './core'
-import { BuildBlockComponent } from '@flyhub/email-document-core';
+import { BuildBlockComponent } from '@infocare/email-document-core';
 import { useInspectorDrawer } from './editor.store';
 import type { InjectionKey } from 'vue';
 import { computed, provide } from 'vue';

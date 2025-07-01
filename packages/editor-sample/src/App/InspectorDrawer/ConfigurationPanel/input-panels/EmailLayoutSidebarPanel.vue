@@ -41,8 +41,8 @@
 </template>
 
 <script setup lang="ts">
-import type { EmailLayoutProps } from '@flyhub/email-builder/blocks/EmailLayout';
-import { EmailLayoutPropsSchema } from '@flyhub/email-builder/blocks/EmailLayout';
+import type { EmailLayoutProps } from '@infocare/email-builder/blocks/EmailLayout';
+import { EmailLayoutPropsSchema } from '@infocare/email-builder/blocks/EmailLayout';
 import BaseSidebarPanel from './helpers/BaseSidebarPanel.vue';
 import NullableFontFamily from './helpers/inputs/NullableFontFamily.vue';
 import ColorInput from './helpers/inputs/ColorInput/ColorInput.vue';

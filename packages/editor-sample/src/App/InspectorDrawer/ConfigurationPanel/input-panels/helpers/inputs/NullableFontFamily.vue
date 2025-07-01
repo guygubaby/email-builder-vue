@@ -11,7 +11,7 @@
 
 <script setup lang="ts">
 import type { SelectItem } from '@nuxt/ui';
-import { FONT_FAMILIES } from '@flyhub/email-core';
+import { FONT_FAMILIES } from '@infocare/email-core';
 import { ref } from 'vue';
 
 const props = defineProps<{

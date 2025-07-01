@@ -1,7 +1,7 @@
 import { z } from 'zod';
 
-import { ColumnsContainerPropsSchema as BaseColumnsContainerPropsSchema } from '@flyhub/email-block-columns-container';
-import type { ColumnsContainerProps as BaseColumnsContainerProps } from '@flyhub/email-block-columns-container';
+import { ColumnsContainerPropsSchema as BaseColumnsContainerPropsSchema } from '@infocare/email-block-columns-container';
+import type { ColumnsContainerProps as BaseColumnsContainerProps } from '@infocare/email-block-columns-container';
 
 const BasePropsShape = BaseColumnsContainerPropsSchema.shape.props.unwrap().unwrap().shape;
 

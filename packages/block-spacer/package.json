@@ -1,5 +1,5 @@
 {
-  "name": "@flyhub/email-block-spacer",
+  "name": "@infocare/email-block-spacer",
   "version": "0.0.1",
   "scripts": {
     "build": "npm run build:lib && npm run build:types",

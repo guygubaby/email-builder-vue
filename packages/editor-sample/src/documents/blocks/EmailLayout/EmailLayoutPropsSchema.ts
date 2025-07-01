@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { COLOR_SCHEMA, FONT_FAMILY_NAMES, FONT_FAMILY_SCHEMA } from '@flyhub/email-core'
+import { COLOR_SCHEMA, FONT_FAMILY_NAMES, FONT_FAMILY_SCHEMA } from '@infocare/email-core'
 
 const EmailLayoutPropsSchema = z.object({
   backdropColor: COLOR_SCHEMA,

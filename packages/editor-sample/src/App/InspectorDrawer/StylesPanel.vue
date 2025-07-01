@@ -8,7 +8,7 @@
 import { useInspectorDrawer } from '../../documents/editor/editor.store';
 import { computed } from 'vue';
 import EmailLayoutSidebarPanel from './ConfigurationPanel/input-panels/EmailLayoutSidebarPanel.vue';
-import type { EmailLayoutProps } from '@flyhub/email-builder/blocks/EmailLayout';
+import type { EmailLayoutProps } from '@infocare/email-builder/blocks/EmailLayout';
 
 const inspectorDrawer = useInspectorDrawer()
 

@@ -23,7 +23,7 @@
 </template>
 
 <script lang="ts">
-import { getPadding, PADDING_SCHEMA } from '@flyhub/email-core';
+import { getPadding, PADDING_SCHEMA } from '@infocare/email-core';
 import { computed } from 'vue';
 import { z } from 'zod';
 

@@ -8,7 +8,7 @@
 </template>
 
 <script setup lang="ts">
-import BaseContainer from '@flyhub/email-block-container';
+import BaseContainer from '@infocare/email-block-container';
 import EditorChildrenIds from '../helpers/EditorChildrenIds.vue';
 import type { EditorChildrenChange } from '../helpers/EditorChildrenIds.vue';
 import type { ContainerProps } from './ContainerPropsSchema';
