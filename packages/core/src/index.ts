@@ -2,6 +2,11 @@ import { z } from 'zod';
 
 export const FONT_FAMILIES = [
   {
+    key: 'NOTO_SANS',
+    label: 'Noto sans',
+    value: 'Noto Sans, sans-serif',
+  },
+  {
     key: 'MODERN_SANS',
     label: 'Modern sans',
     value: '"Helvetica Neue", "Arial Nova", "Nimbus Sans", Arial, sans-serif',
@@ -51,6 +56,7 @@ export const FONT_FAMILIES = [
 ] as const;
 
 export const FONT_FAMILY_NAMES = [
+  'NOTO_SANS',
   'MODERN_SANS',
   'BOOK_SANS',
   'ORGANIC_SANS',
