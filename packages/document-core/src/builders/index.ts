@@ -1,4 +1,4 @@
 import buildBlockConfigurationDictionary from './buildBlockConfigurationDictionary';
-import buildBlockConfigurationSchema from './buildBlockConfingurationSchema';
+import buildBlockConfigurationSchema from './buildBlockConfigurationSchema';
 
 export { buildBlockConfigurationDictionary, buildBlockConfigurationSchema };
