@@ -1,6 +1,6 @@
 {
   "name": "@infocare/email-block-image",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "scripts": {
     "build": "npm run build:lib && npm run build:types",
     "build:lib": "vite build",
