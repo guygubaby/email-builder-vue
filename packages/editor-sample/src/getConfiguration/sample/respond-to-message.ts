@@ -143,7 +143,7 @@ const RESPOND_TO_MESSAGE: TEditorConfiguration = {
         size: 'large',
         buttonStyle: 'pill',
         text: 'Respond',
-        url: 'http://example.usewaypoint.com/request/2334234',
+        url: 'https://www.aisgz.org/admin',
         fullWidth: false,
       },
     },

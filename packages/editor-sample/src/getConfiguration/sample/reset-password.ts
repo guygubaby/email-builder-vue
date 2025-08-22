@@ -107,7 +107,7 @@ const RESET_PASSWORD: TEditorConfiguration = {
         fullWidth: false,
         size: 'medium',
         text: 'Change my password',
-        url: 'https://example.usewaypoint.com/reset_password?token=02938409809w8r09a83wr098aw0',
+        url: 'https://www.aisgz.org/admin/',
       },
     },
   },

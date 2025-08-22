@@ -72,7 +72,7 @@ Each block is its own npm package that can be included in the builder. These are
 
 ## Email client support
 
-All blocks are [tested and supported](https://www.usewaypoint.com/docs/email-client-support) by modern email clients (on both desktop and mobile) including: Gmail, Apple Mail, Outlook, Yahoo! Mail, HEY and Superhuman.
+All blocks are [tested and supported](https://www.aisgz.org/docs/email-client-support) by modern email clients (on both desktop and mobile) including: Gmail, Apple Mail, Outlook, Yahoo! Mail, HEY and Superhuman.
 
 ![Image of mobile rendering](https://raw.githubusercontent.com/usewaypoint/email-builder-js/refs/heads/main/images/mobile.png)
 
@@ -179,7 +179,7 @@ await transporter.sendMail({
 
 ### Sending through an email API
 
-We'll use [Waypoint](https://www.usewaypoint.com) for this example, however, you can use any email API like Amazon SES, SendGrid, or MailGun.
+We'll use [Waypoint](https://www.aisgz.org) for this example, however, you can use any email API like Amazon SES, SendGrid, or MailGun.
 
 ```javascript
 import axios from 'axios';

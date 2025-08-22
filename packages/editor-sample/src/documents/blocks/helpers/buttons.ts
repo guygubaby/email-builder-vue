@@ -42,7 +42,7 @@ export const BUTTONS: TButtonProps[] = [
       data: {
         props: {
           text: 'Button',
-          url: 'https://www.usewaypoint.com',
+          url: 'https://www.aisgz.org',
         },
         style: { padding: { top: 16, bottom: 16, left: 24, right: 24 } },
       },
@@ -55,8 +55,8 @@ export const BUTTONS: TButtonProps[] = [
       type: 'Image',
       data: {
         props: {
-          url: 'https://assets.usewaypoint.com/sample-image.jpg',
-          alt: 'Sample product',
+          url: 'https://oss.aisgz.org/aisg-website/prod/c4b6f6d924bb48a38a546b455ed49517.png',
+          alt: 'AISG',
           contentAlignment: 'middle',
           linkHref: null,
         },
