@@ -31,7 +31,7 @@ import { z } from 'zod';
 import { computed } from 'vue';
 
 export const FIXED_WIDTHS_SCHEMA = z
-  .tuple([z.number().nullish(), z.number().nullish(), z.number().nullish()])
+  .tuple([z.union([z.number(), z.string()]).nullish(), z.union([z.number(), z.string()]).nullish(), z.union([z.number(), z.string()]).nullish()])
   .optional()
   .nullable();
 
@@ -68,7 +68,7 @@ export type ColumnsContainerProps = {
     } | null,
   } | null,
   props?: {
-    fixedWidths?: [number | null | undefined, number | null | undefined, number | null | undefined] | null,
+    fixedWidths?: [number | string | null | undefined, number | string | null | undefined, number | string | null | undefined] | null,
     columnsCount?: 2 | 3 | null,
     columnsGap?: number | null,
     contentAlignment?: 'top' | 'middle' | 'bottom' | null,

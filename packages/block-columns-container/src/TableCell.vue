@@ -32,12 +32,11 @@ const style = computed(() => {
     verticalAlign: contentAlignment.value,
     paddingLeft: getPaddingBefore(props.index, props.props) + 'px',
     paddingRight: getPaddingAfter(props.index, props.props) + 'px',
-    width: typeof width === 'number' ? width + 'px' : undefined,
+    width: typeof width === 'number' ? width + 'px' : (typeof width === 'string' ? width : undefined),
   }
 })
 
 /** Functions */
-
 function getPaddingBefore(index: number, { columnsGap, columnsCount }: Props['props']): number {
   if (index === 0) {
     return 0;
