@@ -31,7 +31,7 @@ import { z } from 'zod';
 import { computed } from 'vue';
 
 export const FIXED_WIDTHS_SCHEMA = z
-  .tuple([z.union([z.number(), z.string()]).nullish(), z.union([z.number(), z.string()]).nullish(), z.union([z.number(), z.string()]).nullish()])
+  .tuple([z.any().nullish(), z.any().nullish(), z.any().nullish()])
   .optional()
   .nullable();
 
