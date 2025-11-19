@@ -8,8 +8,9 @@
 import BaseContainer from '@infocare/email-block-container';
 import ReaderBlock from '../../Reader/ReaderBlock.vue';
 import { ContainerProps } from './ContainerPropsSchema';
+import { computed } from 'vue';
 
 const props = defineProps<ContainerProps>()
 
-const childrenIds = props.props?.childrenIds ?? []
+const childrenIds = computed(() => props.props?.childrenIds ?? [])
 </script>

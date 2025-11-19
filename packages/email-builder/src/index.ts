@@ -1,6 +1,7 @@
 export { default as renderToStaticMarkup } from './renderers/renderToStaticMarkup';
 
 import Reader from './Reader/core.vue';
+import ReaderBlock from './Reader/ReaderBlock.vue';
 import { buildReaderDictionary } from './Reader';
 
 export type TReaderProps = {
@@ -17,4 +18,4 @@ export type TReaderBlockProps = {
   id: string;
 };
 
-export { Reader, buildReaderDictionary };
+export { Reader, ReaderBlock, buildReaderDictionary };

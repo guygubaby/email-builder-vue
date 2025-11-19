@@ -10,7 +10,7 @@ import Text, { TextPropsSchema } from '@infocare/email-block-text';
 import EmailLayoutReader, { EmailLayoutPropsSchema } from '../blocks/EmailLayout';
 import ColumnsContainerReader , { ColumnsContainerPropsSchema } from '../blocks/ColumnsContainer';
 import ContainerReader, { ContainerPropsSchema } from '../blocks/Container';
-import { shallowRef } from 'vue';
+import { shallowRef, watchEffect } from 'vue';
 
 const getBaseReaderDictionary = () => {
    const READER_DICTIONARY = {
