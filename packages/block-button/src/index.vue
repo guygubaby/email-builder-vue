@@ -3,7 +3,7 @@
     <a :href="url" :style="linkStyle" target="_blank">
       <!-- eslint-disable-next-line vue/no-v-html -->
       <span v-html="firstSpan" />
-      <span> {{ text }}</span>
+      <span style="white-space: pre-wrap;"> {{ text }}</span>
       <!-- eslint-disable-next-line vue/no-v-html -->
       <span v-html="lastSpan" />
     </a>
