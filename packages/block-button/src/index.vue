@@ -1,9 +1,9 @@
 <template>
   <div :style="wrapperStyle">
-    <a :href="url" :style="linkStyle" target="_blank">
+    <a :href="url" :style="linkStyle" target="_blank" style="width: auto; min-width: fit-content;">
       <!-- eslint-disable-next-line vue/no-v-html -->
       <span v-html="firstSpan" />
-      <span style="white-space: pre-wrap;"> {{ text }}</span>
+      <span style="white-space: pre;"> {{ text }}</span>
       <!-- eslint-disable-next-line vue/no-v-html -->
       <span v-html="lastSpan" />
     </a>
