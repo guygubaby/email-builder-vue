@@ -2,12 +2,12 @@
   <BaseSidebarPanel title="Columns block">
     <RadioGroupInput
       label="Number of columns"
-      :model-value="data.props?.columnsCount === 2 ? '2' : '3'"
-      :items="[{ label: '2', value: '2' }, { label: '3', value: '3' }]"
-      @update:model-value="handleUpdateData({ ...data, props: { ...data.props, columnsCount: $event === '2' ? 2 : 3 } })"
+      :model-value="String(data.props?.columnsCount ?? 2)"
+      :items="[{ label: '2', value: '2' }, { label: '3', value: '3' }, { label: '4', value: '4' }]"
+      @update:model-value="handleColumnsCountChange($event)"
     />
     <ColumnWidthsInput
-      :columns-count="data.props?.columnsCount ?? 3"
+      :columns-count="data.props?.columnsCount ?? 2"
       :model-value="data.props?.fixedWidths"
       @update:model-value="handleUpdateData({ ...data, props: { ...data.props, fixedWidths: $event } })"
     />
@@ -54,7 +54,7 @@ type ColumnsContainerSidebarPanelProps = {
   data: ColumnsContainerProps;
 }
 
-defineProps<ColumnsContainerSidebarPanelProps>()
+const { data } = defineProps<ColumnsContainerSidebarPanelProps>()
 
 const emit = defineEmits<{
   (e: 'update:data', args: ColumnsContainerProps): void
@@ -66,8 +66,30 @@ const errors = ref<Zod.ZodError | null>(null)
 
 /** Functions */
 
-function handleUpdateData(data: unknown) {
-  const res = ColumnsContainerPropsSchema.safeParse(data);
+const EMPTY_COLUMNS = [
+  { childrenIds: [] as string[] },
+  { childrenIds: [] as string[] },
+  { childrenIds: [] as string[] },
+  { childrenIds: [] as string[] },
+];
+
+function handleColumnsCountChange(val: string) {
+  const count = val === '2' ? 2 : val === '3' ? 3 : 4;
+  let columns = data.props?.columns ?? EMPTY_COLUMNS;
+  let fixedWidths = data.props?.fixedWidths;
+  if (count === 4) {
+    if (columns.length < 4) {
+      columns = [...columns, ...Array.from({ length: 4 - columns.length }, () => ({ childrenIds: [] as string[] }))];
+    }
+    if (fixedWidths && fixedWidths.length < 4) {
+      fixedWidths = [...fixedWidths, ...Array(4 - fixedWidths.length).fill(null)] as typeof fixedWidths;
+    }
+  }
+  handleUpdateData({ ...data, props: { ...data.props, columnsCount: count, columns, ...(fixedWidths && { fixedWidths }) } });
+}
+
+function handleUpdateData(payload: unknown) {
+  const res = ColumnsContainerPropsSchema.safeParse(payload);
 
   if (res.success) {
     emit('update:data', res.data);

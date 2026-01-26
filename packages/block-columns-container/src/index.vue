@@ -18,6 +18,9 @@
           <TableCell :index="2" :props="blockProps">
             <slot name="column-2" />
           </TableCell>
+          <TableCell :index="3" :props="blockProps">
+            <slot name="column-3" />
+          </TableCell>
         </tr>
       </tbody>
     </table>
@@ -31,7 +34,7 @@ import { z } from 'zod';
 import { computed } from 'vue';
 
 export const FIXED_WIDTHS_SCHEMA = z
-  .tuple([z.any().nullish(), z.any().nullish(), z.any().nullish()])
+  .tuple([z.any().nullish(), z.any().nullish(), z.any().nullish(), z.any().nullish()])
   .optional()
   .nullable();
 
@@ -47,7 +50,7 @@ export const ColumnsContainerPropsSchema = z.object({
   .object({
     fixedWidths: FIXED_WIDTHS_SCHEMA,
     columnsCount: z
-    .union([z.literal(2), z.literal(3)])
+    .union([z.literal(2), z.literal(3), z.literal(4)])
     .optional()
     .nullable(),
     columnsGap: z.number().optional().nullable(),
@@ -68,8 +71,8 @@ export type ColumnsContainerProps = {
     } | null,
   } | null,
   props?: {
-    fixedWidths?: [number | string | null | undefined, number | string | null | undefined, number | string | null | undefined] | null,
-    columnsCount?: 2 | 3 | null,
+    fixedWidths?: [number | string | null | undefined, number | string | null | undefined, number | string | null | undefined, number | string | null | undefined] | null,
+    columnsCount?: 2 | 3 | 4 | null,
     columnsGap?: number | null,
     contentAlignment?: 'top' | 'middle' | 'bottom' | null,
   } | null,

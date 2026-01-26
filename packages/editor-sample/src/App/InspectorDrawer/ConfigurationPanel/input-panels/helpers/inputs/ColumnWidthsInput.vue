@@ -17,7 +17,8 @@ type TWidthValue = number | null | undefined;
 type FixedWidths = [
   TWidthValue,
   TWidthValue,
-  TWidthValue
+  TWidthValue,
+  TWidthValue,
 ];
 
 type ColumnsLayoutInputProps = {
@@ -33,7 +34,7 @@ const emit = defineEmits<{
 
 /** Computed */
 
-const currentValue = computed(() => props.modelValue ?? [null, null, null] satisfies FixedWidths)
+const currentValue = computed(() => props.modelValue ?? [null, null, null, null] satisfies FixedWidths)
 
 /** Functions */
 

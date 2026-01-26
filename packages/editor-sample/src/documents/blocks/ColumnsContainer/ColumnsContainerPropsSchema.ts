@@ -14,6 +14,7 @@ const ColumnsContainerPropsSchema = z.object({
         z.object({ childrenIds: z.array(z.string()) }),
         z.object({ childrenIds: z.array(z.string()) }),
         z.object({ childrenIds: z.array(z.string()) }),
+        z.object({ childrenIds: z.array(z.string()) }),
       ]),
     })
     .optional()
@@ -25,7 +26,8 @@ export type ColumnsContainerProps = Omit<BaseColumnsContainerProps, 'props'> & {
     columns: [
       { childrenIds: string[] },
       { childrenIds: string[] },
-      { childrenIds: string[] }
+      { childrenIds: string[] },
+      { childrenIds: string[] },
     ];
   }
   | null;

@@ -1,5 +1,5 @@
 <template>
-  <td v-if="columnsCount !== 2 || index !== 2" :style="style">
+  <td v-if="index < columnsCount" :style="style">
     <slot />
   </td>
 </template>
@@ -13,7 +13,7 @@ type Props = {
   index: number,
   props: {
     fixedWidths: z.infer<typeof FIXED_WIDTHS_SCHEMA>;
-    columnsCount: 2 | 3;
+    columnsCount: 2 | 3 | 4;
     columnsGap: number;
     contentAlignment: 'top' | 'middle' | 'bottom';
   }
@@ -38,32 +38,22 @@ const style = computed(() => {
 
 /** Functions */
 function getPaddingBefore(index: number, { columnsGap, columnsCount }: Props['props']): number {
-  if (index === 0) {
-    return 0;
-  }
-  if (columnsCount === 2) {
-    return columnsGap / 2;
-  }
-  if (index === 1) {
-    return columnsGap / 3;
-  }
+  if (index === 0) return 0;
+  if (columnsCount === 2) return columnsGap / 2;
+  if (columnsCount === 4) return columnsGap / 2;
+  if (index === 1) return columnsGap / 3;
   return (2 * columnsGap) / 3;
 }
 
 function getPaddingAfter(index: number, { columnsGap, columnsCount }: Props['props']): number {
   if (columnsCount === 2) {
-    if (index === 0) {
-      return columnsGap / 2;
-    }
-    return 0;
+    return index === 0 ? columnsGap / 2 : 0;
   }
-
-  if (index === 0) {
-    return (2 * columnsGap) / 3;
+  if (columnsCount === 4) {
+    return index === 3 ? 0 : columnsGap / 2;
   }
-  if (index === 1) {
-    return columnsGap / 3;
-  }
+  if (index === 0) return (2 * columnsGap) / 3;
+  if (index === 1) return columnsGap / 3;
   return 0;
 }
 

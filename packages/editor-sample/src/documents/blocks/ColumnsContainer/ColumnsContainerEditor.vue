@@ -12,6 +12,9 @@
     <template #column-2>
       <EditorChildrenIds :children-ids="columns?.[2]?.childrenIds" @change="handleUpdateColumns(2, $event)" />
     </template>
+    <template #column-3>
+      <EditorChildrenIds :children-ids="columns?.[3]?.childrenIds" @change="handleUpdateColumns(3, $event)" />
+    </template>
   </BaseColumnsContainer>
 </template>
 
@@ -27,7 +30,7 @@ import { computed, inject } from 'vue';
 
 const props = defineProps<ColumnsContainerProps>()
 
-const EMPTY_COLUMNS = [{ childrenIds: [] }, { childrenIds: [] }, { childrenIds: [] }]
+const EMPTY_COLUMNS = [{ childrenIds: [] }, { childrenIds: [] }, { childrenIds: [] }, { childrenIds: [] }]
 
 const inspectorDrawer = useInspectorDrawer()
 
@@ -43,11 +46,16 @@ const restProps = computed(() => {
 
   return rest
 })
-const columnsValue = computed(() => props.props?.columns ?? EMPTY_COLUMNS)
+const columnsValue = computed(() => {
+  const c = props.props?.columns ?? EMPTY_COLUMNS
+  const n = [...c]
+  while (n.length < 4) n.push({ childrenIds: [] })
+  return n as typeof EMPTY_COLUMNS
+})
 
 /** Functions */
 
-function handleUpdateColumns(columnIndex: 0 | 1 | 2, { block, blockId, childrenIds }: EditorChildrenChange) {
+function handleUpdateColumns(columnIndex: 0 | 1 | 2 | 3, { block, blockId, childrenIds }: EditorChildrenChange) {
   const nColumns = [...columnsValue.value]
 
   nColumns[columnIndex] = { childrenIds }
