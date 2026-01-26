@@ -3,6 +3,7 @@ export { default as renderToStaticMarkup } from './renderers/renderToStaticMarku
 import Reader from './Reader/core.vue';
 import ReaderBlock from './Reader/ReaderBlock.vue';
 import { buildReaderDictionary } from './Reader';
+import ReaderEditorChildrenIds from './helpers/ReaderEditorChildrenIds.vue';
 
 export type TReaderProps = {
   // FIXME: type
@@ -18,4 +19,4 @@ export type TReaderBlockProps = {
   id: string;
 };
 
-export { Reader, ReaderBlock, buildReaderDictionary };
+export { Reader, ReaderBlock, ReaderEditorChildrenIds, buildReaderDictionary };

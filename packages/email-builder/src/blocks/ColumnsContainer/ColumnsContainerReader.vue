@@ -9,6 +9,9 @@
     <template #column-2>
       <ReaderEditorChildrenIds :children-ids="columns?.[2]?.childrenIds" :document="document" />
     </template>
+    <template #column-3>
+      <ReaderEditorChildrenIds :children-ids="columns?.[3]?.childrenIds" :document="document" />
+    </template>
   </BaseColumnsContainer>
 </template>
 

@@ -14,6 +14,7 @@ export const ColumnsContainerPropsSchema = z.object({
         z.object({ childrenIds: z.array(z.string()) }),
         z.object({ childrenIds: z.array(z.string()) }),
         z.object({ childrenIds: z.array(z.string()) }),
+        z.object({ childrenIds: z.array(z.string()) }),
       ]),
     })
     .optional()
@@ -26,6 +27,7 @@ export type ColumnsContainerProps = Omit<BaseColumnsContainerProps, 'props'> & {
   document: Record<string, any>; // needed to render the children
   props?: BaseColumnsContainerProps['props'] & {
     columns: [
+      { childrenIds: string[] },
       { childrenIds: string[] },
       { childrenIds: string[] },
       { childrenIds: string[] },
